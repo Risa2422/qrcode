@@ -1,45 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    width: auto;
+}
 body{
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Outfit', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #D6E1EF;
 }
 
 .container {
     display: grid;
     place-content: center;
-    background-color: #D6E1EF;
     height: 100vh;
-    width: 100wh;
+    width: 100vw;
+    padding: 2rem;
 }
 
 .qrcode {
     box-shadow: 0 0 15px rgb(176, 172, 172);
-    background-color: white;
-    border-radius: 10%;
-    /* box-shadow: 10px 5px 5px lightgray; */
-    padding-top: 10px;
-    padding-bottom: 50px;
-}
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 1rem 1rem 1.7rem;
+    max-width: 320px;
 
-.qrcode-img {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    
 }
 
 .qrcode-img img {
-    width: 400px;
-    height: 400px;
-    border-radius: 10%;
+    border-radius: 12px;
 }
 
 .qrcode h2 {
     text-align: center;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin: 1.5rem 0 .5rem;
+    font-size: 1.4rem;
+    color: hsl(218, 44%, 22%);
 }
 
 .qrcode p {
     text-align: center;
-    color: #676869;
+    color: hsl(220, 15%, 55%);
+    font-size: 15px;
+    margin-bottom: 1rem;
+    padding: 0 12px;
 }
